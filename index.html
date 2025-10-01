@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROCESS OF LISTENING TO MUSIC</title>
+  <style>
+    body {
+      background-color: lightblue;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: DarkCyan;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 20px;
+      flex-wrap: wrap; /* stacks on small screens */
+      gap: 20px;
+    }
+
+    .section {
+      background-color: Azure;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 45%; /* each section takes about 45% of width */
+      box-sizing: border-box;
+    }
+
+    .section img {
+      max-width: 100%;
+      display: block;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .section h2, .section h3 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    em {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>♫♪   Have you ever wondered how you're able to listen to music?   ♫♪</h1>
+
+  <div class="container">
+    <div class="section">
+      <h2>The Internet's Role ♪</h2>
+      <p>
+        The internet plays a very important role in allowing you to stream music online. Here is the simplified version of the path your data takes when accessing music online through the Internet.
+        The device you are connected to begins by sending a play request to your home router. 
+        Following this, your router forwards the request to your ISP network. The ISP network then forwards
+        packets to the hub. Once the packets are examined, they are forwarded to
+        the edge server. This process is repeated in descending order
+        to get your packets back to your home router, which then plays your music on your device!
+      </p>
+      <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMKV2pEN63TaO8nYdb8rPu5vXZxFaAgD2DxyW4ooEAMVEhjJszxtOxMVfUpzZCMF27XrahxocUhLjh1Yc87hPRsE3MmOhbfk2nOJVZpfpUKzKc=w1366-h607" alt="Diagram showing how music is streamed through the internet">
+      <p>
+        Above is a web diagram we created to illustrate and demonstrate the process it takes to listen to music using the internet.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Steps in Depth ♪</h2>
+      <p>
+        <strong>Device</strong> – This is your phone, computer, or tablet and it sends a play request when you click "play" on your music application.
+      </p>
+      <p>
+        <strong>Home Router</strong> – This is your Wi-Fi router at home and it forwards your request to the ISP. The router also decodes the packets and plays the music on your device during the <em>return path</em>.
+      </p>
+      <p>
+        <strong>ISP Network</strong> – Your Internet Service Provider (like AT&T or T-Mobile) receives your request and sends it to a hub.
+      </p>
+      <p>
+        <strong>Hub</strong> – This part of the network infrastructure moves data along the internet. It examines the IP address in the packets and forwards them correctly toward the content server. An example of a hub is The Google Data Center and it hosts multiple servers.
+      </p>
+      <p>
+        <strong>CDN/Edge Server</strong> – A Content Delivery Network stores copies of your music closer to you and sends the requested music data back through the network.
+      </p>
+      <p>
+        <strong>Packets</strong> – Small units of data used to make transportation more manageable and efficient. <em>This is what your "data" is being transformed into during its transmission before reaching its final destination.</em>
+      </p>
+      
+      <!-- Heading 3 placed below Heading 2 content -->
+      <h3>Summary ♪</h3>
+      <p>
+        The internet plays a large role in transmitting your data, which allows you access your music online. The process is basically a round trip: your device requests music → network moves the request to a server → server sends music back → your device receives it.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
